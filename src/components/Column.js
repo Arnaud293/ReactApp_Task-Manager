@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Column = () => {
+const Column = ({column, tasks}) => {
     return (
         <div>
             
