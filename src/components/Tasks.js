@@ -9,8 +9,8 @@ const Tasks = () => {
     return (
         <div className='tasks'>
 
-            {data.columnOrder.map(columnId =>{
-                const column = data.column[columnId];
+            {data.columnsOrder.map(columnId =>{
+                const column = data.columns[columnId];
                 const tasks = column.taskIds.map(taskId => data.tasks[taskId]) 
 
                 return <Column key={column.id} column={column} tasks={tasks}/>
