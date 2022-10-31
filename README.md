@@ -5,3 +5,8 @@ After having trouble logging into my online task management tool, I couldn't fin
 ## How to launch in local ?
 
 Documentation will come after application developement...
+
+## How does it work ?
+
+* During the developement, the application will be run with inner data.
+* After developement, the application will using the localStorage. 
