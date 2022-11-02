@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.tasks{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.task-item {
+  min-height: 20px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.task-item:hover{
+  background-color: bisque;
+  cursor: pointer;
+}
