@@ -7,9 +7,19 @@ const Tasks = () => {
 
     const [data, setData] = useState(initialData);
 
-    const onDragEnd = () => {
-        
+    const onDragEnd = result => {
+        const { destination, source, draggableId} = result;
+
+        // If elements are moving outside of the column or at the same place return null
+        if(!destination){
+            return null;
+        }
+        if(destination.droppableId === destination.droppableId && destination.index === source.index){
+            return null;
+        }
     }
+
+    
 
     return (
         <div className='tasks'>
