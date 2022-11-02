@@ -2,8 +2,8 @@ import React from 'react';
 
 const Task = ({task, index}) => {
     return (
-        <div>
-            
+        <div className='task-item'>
+            {task.content}
         </div>
     );
 };
