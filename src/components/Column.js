@@ -10,12 +10,13 @@ const Column = ({column, tasks}) => {
                 {provided => (
                     <div {...provided.droppableProps}
                     ref={provided.innerRef}
-                    className='tasks-list'>
+                    className='tasks-list'
+                    >
                 
-                {tasks.map((task, index) => (
-                    <Task key={task.id} task={task} index={index}/>
-                ))}
-                </div>
+                        {tasks.map((task, index) => (
+                            <Task key={task.id} task={task} index={index}/>
+                        ))}
+                    </div>
                 )}
             </Droppable>
         </div>
