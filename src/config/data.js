@@ -4,6 +4,8 @@ const initialData = {
         "task-2" : {id: "task-2", content: "Autre random tâche"},
         "task-3" : {id: "task-3", content: "Encore une random tâche"},
         "task-4" : {id: "task-4", content: "Cette tâche est random"},
+        "task-5" : {id: "task-5", content: "Je fais actuellement une random tâche"},
+        "task-6" : {id: "task-6", content: "Je ferai cette random tâche"},
     },
     columns: {
         "column-1" : {
@@ -13,13 +15,13 @@ const initialData = {
         },
         "column-2" : {
             id : "column-1",
-            title: "Tâches à faire",
-            taskIds: [],
+            title: "Tâches en cours",
+            taskIds: ["task-5"],
         },
         "column-3" : {
             id : "column-1",
-            title: "Tâches à faire",
-            taskIds: [],
+            title: "Pour plus tard",
+            taskIds: ["task-6"],
         },
     },
     columnsOrder : ["column-1", "column-2", "column-3"],
