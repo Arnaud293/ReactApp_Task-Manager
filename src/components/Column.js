@@ -7,9 +7,9 @@ const Column = ({column, tasks}) => {
         <div className='tasks-column'>
             <h2>{column.title}</h2>
             <Droppable droppableId={column.id}>
-                {provider => (
-                    <div {...provider.droppableProps}
-                    ref={provider.innerRef}
+                {provided => (
+                    <div {...provided.droppableProps}
+                    ref={provided.innerRef}
                     className='tasks-list'>
                 
                 {tasks.map((task, index) => (
