@@ -17,6 +17,28 @@ const Tasks = () => {
         if(destination.droppableId === destination.droppableId && destination.index === source.index){
             return null;
         }
+
+        // If elements are correctly move into an another place
+        const column = data.columns[source.droppableId];
+        const newTasksId = Array.from(column.taskIds);
+        newTasksId.splice(source.index, 1);
+        newTasksId.splice(destination.index, 0, draggableId);
+
+        const newColumn = {
+            ...column,
+            taskIds: newTasksId,
+        }
+        const newState = {
+            ...data,
+            columns: {
+                ...data.columns,
+                [newColumn.id] : newColumn,
+            },
+            
+        }
+
+        setData(newState);
+        return;
     }
 
     
